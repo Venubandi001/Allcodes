@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    .v1{
+       /* background-color: cornflowerblue; */
+       width: 600px;
+       display: flex;
+    
+    }
+    @keyframes venu {
+        0%{position: relative;
+            top: 0px;
+            /* visibility: hidden; */
+            width: 5px;
+            display: none;
+            
+        }
+        5%{position: relative;
+            top: 5px;
+            /* visibility: hidden; */
+            width: 10px;
+            display: none;
+            
+        }
+        10%{position: relative;
+            top: 10px;
+            /* visibility: hidden; */
+            width:15px ;
+            display: none;
+            
+        }
+        15%{position: relative;
+            top: 15px;
+            /* visibility: hidden; */
+            width: 20px;
+            display: none;
+            
+        }
+        30%{
+            position: relative;
+            top: 20px;
+            /* visibility: hidden; */
+            width: 25px;
+            display: none;
+
+        }
+        50%{position: relative;
+            bottom: 0px;
+           
+            
+
+        }
+        70%{
+            position: relative;
+            bottom: 5px;
+            
+        }
+        80%{ position: relative;
+            bottom: 10px;
+            
+        
+        }
+        90%{
+            position: relative;
+            bottom: 15px;
+        }
+        100%{ position: relative;
+            bottom: 20px;}
+          
+    }
+    .v0{
+       /* border: 1px solid black; */
+       margin-left: 600px;
+       margin-top: 200px;
+       display: flex;
+       
+
+    }
+   
+    .v0 div{
+        
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        /* background-color: black; */
+        
+        border-radius: 50px;
+        animation-iteration-count: infinite;
+    }
+    .v1{
+        animation-name: venu;
+        animation-duration: 3s;
+        background-color: aqua;
+        
+    }
+    .v2{
+        animation-name: venu;
+        animation-duration: 3.5s;
+        background-color: chartreuse;
+        
+    }
+    .v3{
+        animation-name: venu;
+        animation-duration: 4s;
+        background-color: darkred;
+    }
+    .v4{
+        animation-name: venu;
+        animation-duration: 4.5s;
+        background-color: darkgoldenrod;
+
+    }
+    .v5{
+        animation-name: venu;
+        animation-duration: 5s;
+        background-color: darkslateblue;
+        
+    }
+    
+   </style>
+</head>
+<body>
+    <div class="v0">
+        <div class="v1"></div>
+        <div class="v2"></div>
+        <div class="v3"></div>
+        <div class="v4"></div>
+        <div class="v5"></div>
+    </div>
+</body>
+</html>

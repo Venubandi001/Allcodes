@@ -1,0 +1,15 @@
+.city {
+    border: 1px solid darkmagenta;
+    
+    color: blue;
+}
+#venu td,th,tr{
+    color: chartreuse;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.city1 td,th{
+    border: 1px solid red ;
+    border-collapse: collapse;
+    color:darkgreen
+}

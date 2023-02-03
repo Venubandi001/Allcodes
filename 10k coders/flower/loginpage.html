@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Page</title>
+    <style>
+        #f0{
+            /* border: 1px solid black; */
+            background-color: white;
+            width: 360px;
+            height: 350px;
+            margin-left: 600px;
+            text-align: center;  
+            padding: 30px;
+        }
+        #f01{
+            /* border: 1px solid black; */
+            background-color: gainsboro;
+            width: 276px;
+            height: 180px;
+            margin-left: 20px;
+            padding: 20px;
+            border-radius: 8px;   
+        }
+        #x0{
+            background-color: white;
+            width: 600px;
+            margin-left: 600px;
+            padding: 30px;
+        }
+        #x11{
+            margin-left: 10px;
+        }
+        #y0{
+            border: 4px solid rgb(110, 227, 182);
+            width: 490px;
+            height: 490px;
+            margin-left: 600px;
+            padding: 30px;
+        }
+        #y11{
+            /* background-color: gainsboro; */
+            width: 410px;
+            height: 350px;
+            margin-left: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        #z0{
+            /* border: 1px solid black; */
+            width: 400px;
+            background-color: white;
+            margin-left: 580px;
+            padding: 30px;
+        }
+        #z11{
+            margin-left: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="f0">
+        <h3 style="opacity: 0.3;">Sign in to GitHub</h3>
+        <div id="f01">
+        <label for="f1" style="margin-left: -80px;">Username or email Address</label>
+        <input type="text" id="f1" style="display: block; position: relative; margin-left: 10px; width: 250px; height: 25px; border-radius: 5px;"/>
+        <label for="f2">Password</label>
+        <label for="f2" style="margin-left: 80px;"><a href="" style="text-decoration: none; color: rgb(10, 40, 209);">Forgot password?</a></label>
+        <input type="password" id="f2" style="display: block; position: relative;margin-left: 10px; width: 250px; height: 25px; border-radius: 5px;" >
+        <p style="background-color: rgb(7, 213, 7); width: 240px; height: 16px; padding: 10px; margin-left: 10px; border-radius: 5px;">Sign in</p>
+        </div>
+        <p style="border: 1px solid black; width: 295px; height: 20px; margin-left: 20px; padding: 10px; border-radius: 5px;">New to GitHub? <a href="" style="text-decoration: none;color: rgb(10, 40, 209);">Create account.</a></p>
+    </div>
+    <div>
+    </div>
+    <div id="x0">
+        <p style="background-color: rgb(7, 188, 143); padding: 10px; color: white;">Contact Us</p>
+        <div id="x11">
+        <label for="x1" style="display: block;">Full name<span style="color: red;">*</span></label>
+        <input type="text" id="x1" style="width: 200px; border-radius: 5px;" />
+        <input type="text" id="x1" style="width: 200px; border-radius: 5px;"/>
+        <!-- <p>First Last</p> -->
+        <label for="x2" style="display: block;">Email<span style="color: red;">*</span></label>
+        <input type="text" id="x2"style="width: 300px; border-radius: 5px;"/>
+        <label for="x3" style="display: block;">Leave us a few words<span style="color: red;">*</span></label>
+        <textarea style="width: 580px; height: 50px;"></textarea>
+        </div>
+        <p style="background-color: rgb(7, 188, 143); margin-left: 200px; width: 50px; padding: 10px; color: white;">Submit</p>
+    </div>
+    <div id="y0">
+        <img src="../venuwork.jpg" rel="Venu" width="80px" height="80px" style="margin-left: 200px;"/>
+        <p style="font-size: large; margin-left: 200px;">Contact Us</p>
+        <div id="y11">
+        <label for="y1" style="display: block; padding: 6px;">Name<span style="color: red;">*</span></label>
+        <input type="text" id="y1" placeholder="First Name" style="width: 176px; border-radius: 5px; background-color: aliceblue;"/>
+        <input type="text" id="y1" placeholder="Last Name" style="width: 176px; border-radius: 5px; background-color: aliceblue; margin-left: 30px;"/>
+        <label for="y2" style="display: block; padding: 6px;">Email Address<span style="color: red;">*</span></label>
+        <input type="text" id="y2" style="width: 400px; border-radius: 5px;background-color: aliceblue;"/>
+        <label for="y3" style="display: block;">Your Industry<span>*</span></label>
+        <select id="y3" style="width: 400px; border-radius: 5px;background-color: aliceblue;">
+             <option value=" " disabled selected hidden>Choose One</option>
+             <option value="Industry1">Industry1</option>
+             <option value="Industry1">Industry2</option>
+             <option value="Industry1">Industry3</option>
+             <option value="Industry1">Industry4</option>
+             <option value="Industry1">Industry5</option>
+             <option value="Industry1">Industry6</option>
+        </select>
+        <label for="y4" style="display: block;">What Service are you interested in?<span style="color: red;">*</span></label>
+        <select id="y4" style="width: 400px; border-radius: 5px;background-color: aliceblue;">
+            <option value=" " disabled selected hidden>Choose One</option>
+            <option value="Industry1">Service1</option>
+            <option value="Industry1">Service2</option>
+            <option value="Industry1">Service3</option>
+            <option value="Industry1">Service4</option>
+            <option value="Industry1">Service5</option>
+            <option value="Industry1">Service6</option>
+       </select>
+        <p>Would you like a video demo?</p>
+        <input type="radio" id="yes" name="video">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="video" >
+        <label for="no">No</label>
+        <p style="background-color: yellow; width: 386px; padding: 10px; border-radius: 4px;text-align: center;">Sumbit</p>
+        </div>
+    </div>
+    <div id="z0">
+        <div id="z11">
+        <label for="z1" style="display: block;">Text</label>
+        <input type="text" id="z1" style="width: 200px; height: 20px; border-radius: 4px; background-color: aliceblue;"/>
+        <p>Radio Button</p>
+        <input type="radio" id="yes" name="video">
+        <label for="yes">Option one</label>
+        <input type="radio" id="no" name="video" >
+        <label for="no">Option Two</label>
+        <p>Dropdown Menu</p>
+        <select id="y3" style="width: 250px; height: 30px; background-color: aliceblue;">
+            <option value=" " disabled selected hidden>Choose One</option>
+            <option value="Industry1">option one</option>
+            <option value="Industry1">Option Two</option>
+            <option value="Industry1">Option Three</option>
+            <option value="Industry1">Option Four</option>
+            <option value="Industry1">Option Five</option>
+            <option value="Industry1">Option Six</option>
+       </select>
+       <p >Text Area</p>
+       <textarea style="width: 300px; height: 50px;"></textarea>
+       <p>Checkboxes</p>
+       <input type="checkbox" id="c1" name="c1"/>
+       <label for="c1">Option one</label>
+       <input type="checkbox" id="c2" name="c2"/>
+       <label for="c2">Option one</label>
+       <input type="checkbox" id="c3" name="c2"/>
+       <label for="c3">Option one</label>
+       <p style="margin-left: 150px;">Button</p>
+       <button style="margin-left: 150px; background-color: rgb(69, 72, 226); padding: 5px;"><a href="" style="color: white; text-decoration: none;">Submit</a></button>
+       </div>
+    </div>
+</body>
+</html>

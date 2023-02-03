@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        #v1{
+            border: 1px solid black;
+            padding: 20px;
+            margin-left: 600px;
+            width: 100px;
+        }
+        @keyframes key {
+            form{
+                background-position: left;
+                
+                
+            }
+            to{
+                background-position: right;
+                background-color: chartreuse;
+            }
+    
+        }
+        @keyframes rat {
+            /* 100%{border-color: aqua; transform: rotate(360deg);} */
+            25%{border-color: rgb(21, 215, 138); }
+            50%{border-color: red;}
+            75%{border-color: chartreuse;}
+            100%{border-color: darkorange;}
+            
+        }
+        @keyframes venu {
+           100%{border-color: darkorange; transform: rotate(360deg);}
+           
+        }
+        #v1:hover{
+            width: 350px;
+            /* transform: rotate(360deg); */
+            border-radius: 10px;
+            font-size: x-large;
+            transition: 4s;
+            background-color: red;
+            background-image: url("../search.png");
+            background-repeat: no-repeat;
+
+            background-size: 35px;
+            animation-name: key;
+            animation-duration: 4s;
+            
+        }
+        div{
+            border: 20px dotted;
+            /* background-color: aqua; */
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border-radius: 300px;
+            animation-name: rat;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+
+    </style>
+</head>
+<body>
+     <!-- <p id="v1"> Search..!</p> -->
+    <input type="text" placeholder="Search...!" id="v1">
+    <div> </div>
+</body>
+</html>

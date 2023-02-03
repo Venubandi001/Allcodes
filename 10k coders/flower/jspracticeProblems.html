@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Create a function that takes two numbers as arguments and returns their sum---------------
+      /*function name1(a,b) {
+        return a+b;            
+        }
+        console.log(name1(5,3));*/
+      /*Write a function that takes an integer minutes and converts it to seconds.-----------------------
+        function name2() {
+            var s=prompt("Enter the minutes");
+            return s*60;
+            
+        }
+        console.log(name2()+"seconds");*/
+      //Create a function that takes a number as an argument, increments the number by +1 and returns the result.----------
+      /*function name3(a) {
+            a++;
+            return a;    
+        }
+        console.log(name3(4));*/
+      //Create a function that takes the age in years and returns the age in days.---------------------------------
+      /* function name4() {
+               b=prompt("enter your age");
+               return b*365;
+         }
+        console.log(name4()+"days");*/
+      //Create a function that takes voltage and current and returns the calculated power.---------------------------------
+      /* function name5(power) {
+            var vol = prompt("Enter the voltage");
+            var cur = prompt("Enter the current");
+            return power = vol * cur;
+            
+         }
+         console.log("power is"+name5());*/
+      //7.Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10
+      /* function name6(a,b) {
+            var a = prompt("Enter the A value");
+            var b = prompt("Enter the B value");
+            if(a == 10 || b == 10 || a+b == 10){
+                return true;
+            } 
+            else{
+                return "10 not there";
+            } 
+        }
+        console.log(name6( ));*/
+      //8.Create a function that takes two strings as arguments and returns either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+      /*function name7(a,b) {
+            var a = prompt("Enter the any word");
+            var b = prompt("Enter the second word");
+            if(a.length == b.length){
+                return true;
+                // console.log("true");
+                }
+            else{
+                return false;
+                // console.log("false");
+                }  
+        }
+        console.log(name7());*/
+      //Checking the password is correct or worng-----------------------------------------------------------------------------------
+      /*var x = prompt("enter the password");
+        var y ="Venubandi001";
+        // for(var i=0; i<y.length; i++){
+        //     var r = x.slice(0,x.length);
+        //     var z = y.slice(0,y.length);
+        // }
+        if(x == y ){
+            console.log("password macthed");
+        }
+        else{
+            console.log("Password not Macthed");
+        }*/
+      //10.Create a function that takes an array of 10 numbers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).
+      /*function name8() {
+            var k=55;
+            var a=[];
+            
+            for(var i=0; i<10; i++){
+            a.push(prompt("ENter the array values"));  
+            var b = a[i];  
+            }
+            console.log(a);
+            var b = a[0]+a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7]+a[8]+a[9];
+            console.log(b);
+        }
+        name8();*/
+      //11.Create a function that returns an array of strings sorted by length in ascending order.-------------------------------------
+     /* function name9() {
+            var a1 = [];
+            for(var i=0; i<4;i++){
+                a1.push(prompt("enter the string"));
+            }
+            console.log("Array before Ascending order",a1);
+                for(var r=0;r<a1.length;r++){
+
+                    for(var j=r+1;j<a1.length;j++){
+                        if(a1[r].length > a1[j].length){
+                            var tem;
+                            temp=a1[r];
+                            a1[r]=a1[j]
+                            a1[j]=temp;
+                        }
+                    }
+                
+                }
+            
+            console.log("Array After Desendin",a1);
+            
+        }
+        name9();*/
+      //12.Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.---------------------
+     /* function name10() {
+        var k = [[4, 3, 8, 2, 10],[0, 10, 11, 20, 8, 6]];
+        for (i = 0; i < k.length; i++) {
+          for (j = 0; j < k[1].length; j++) {
+            for (x = j + 1; x < k[1].length; x++) {
+              if (k[i][j] > k[i][x]) {
+                var t;
+                t = k[i][j];
+                k[i][j] = k[i][x];
+                k[i][x] = t;
+              }
+            }
+          }
+        }
+        console.log("After arranging ", k);
+        var zz = [];
+        for (y = 0; y < k.length - 1; y++) {
+          for (r = y + 1; r < k.length; r++) {
+            zz.push(k[y][k[y].length - 1]);
+            zz.push(k[r][k[r].length - 1]);
+          }
+        }
+        console.log("Largest values", zz);
+      }
+      name10();*/
+      
+      //13.	Create a function that takes an array of numbers and returns the second largest number.--------------------
+     /* function name11() {
+        var a11 = [10, 40, 30, 20, 50];
+        for(var i=0;i<a11.length;i++){
+            for(var j=i+1;j<a11.length;j++){
+                if(a11[i]>a11[j]){
+                    var t;
+                    t=a11[i];
+                    a11[i]=a11[j];
+                    a11[j]=t;
+                }
+            }
+        }
+        console.log(a11);
+        console.log("In array this is second largest number",a11[a11.length-2])
+      }
+      name11();*/
+      //14.Create a function that takes an array of items, removes all duplicate items and returns a new array in the same sequential order as the old array (minus duplicates).
+      /*
+      var a12 = [22,22,4,8,99,99];
+      var a113=[];
+      function name12(a12) {
+        var a112 = [];
+        for(i=0; i< a12.length; i++){
+            if(a112.indexOf(a12[i]) === -1){
+                a112.push(a12[i]);
+            }
+            else{
+                a113.push(a12[i]);  
+            }
+        }
+        return a112;
+      }
+      console.log(name12(a12));*/
+
+      //15.Create a function that takes an array of integers as an argument and returns a unique number from that array. All numbers except unique ones have the same number of occurrences in the array.
+      // var a13 =[22,22,4,8,99,99];
+      // let x = [];
+      // let count;
+      // for (let i = 0; i < a13.length; i++) {
+      //   if(a13[i] == a13[i+1]){
+         
+      //   }
+      //   else{
+      //     x.push(a13[i])
+      //   }
+        
+      // }
+      // console.log(x);
+      //16.	Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.Example:charCount("c", "Chamber of secrets") ➞ 1
+    //   function name13(k,y){
+    //   let count=0;
+    //   let m = "";
+    //   for (let i = 0; i < k.length; i++) {
+    //     for (let j = 0; j < y.length; j++) {
+    //       if(k[i] == y[j]){
+    //         count++;
+    //         m =k[i]+m;
+    //       }
+    //     } 
+    //   }
+    //   console.log("The comparied value is"+" "+m);
+    //   console.log("The number of characters same are"+" "+count);
+    // }
+    // name13(prompt("enter the first string"),prompt("enter the second second string"));
+  //17.	Create a function that takes a string and returns the number (count) of vowels contained within it.Example:countVowels("Celebration") ➞ 5
+      // function name14(c) {
+      // let c1=0;
+      // for (let i = 0; i < c.length; i++) {
+      //   if(c[i] == "a" || c[i] == "e" || c[i] == "i" || c[i] == "o" || c[i] == "u"){
+      //     c1++;
+      //   }
+        
+      // }
+      // console.log("Number of Vowels are"+" "+c1);
+      // }
+      // name14(prompt("Enter the string"));
+    //18.	Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.Example:reverseCase("Happy Birthday") ➞ "hAPPY bIRTHDAY"
+        // function name15(v) {
+        //   console.log("Before Operation performed"+" "+v);
+        // let c2 =" ";
+        // for (let i = 0; i < v.length; i++) {
+        //   if(v[i] == v[i].toLocaleLowerCase()){
+        //     c2 = c2+v[i].toUpperCase();
+        //   }
+        //   else if(v[i] == v[i].toUpperCase()){
+        //     c2 = c2+v[i].toLowerCase();
+        //   }
+        // }
+        // console.log("After opertation Performed"+" "+c2);
+        // }
+        // name15(prompt("enter the String"));
+    //19.Take one integer n, loop till n and pass each value to a function, create a function that takes one integer parameter, and multiply with 2 in every integer.Input: n=5   Output:2 4 6 8 10Explanation:  Loop start with 1 go till 5 bcoz n=51 x 2 =2, 2 x 2=4, 3 x 2=6 …..etc 
+          // function name16(n) {
+          // let A = [];
+          // for (let i = 1; i < n; i++) {
+          //   A.push(i*2);
+            
+          // }
+          // console.log(A);
+          // }
+          // name16(prompt("Enter the N Value"));
+    // 20.Create Function that will take one parameter and return type of the data.Input: 500 Output: Integer,  Input:Coding Output:String
+        //  function name17(n) {
+        //   return typeof(n);
+        //  }
+        //  console.log(name17(1245));
+    //21. Program to find greatest of three numbers(using ternery operator).Input:  4 8 2 Output: 8 is greatest
+      //  function name18(a,b,c) {
+      //    if(a > b && a && c){
+      //     console.log(a);
+      //    }
+      //    else if(b > a && b > c){
+      //     console.log(b);
+      //    }
+      //    else{
+      //     console.log(c);
+      //    }
+      //  }
+      //  name18(2,8,6);
+    //
+  //   function name19(n) {
+  //   let c1=1;
+  //   for (let i = 1; i <=n; i++) {
+  //     c1 = c1*i
+  //   }
+  //   console.log(c1);
+  // }
+  // name19(5);
+// 23.Program to arrange numbers in ascending order Input: [2,3,1,5,4] Output: [1,2,3,4,5]
+      //  let k = [2,3,1,5,4];
+      //  for (let i = 0; i < k.length; i++) {
+      //   for (let j = i+1; j < k.length; j++) {
+      //     if(k[i] > k[j]){
+      //       var t;
+      //       t=k[i];
+      //       k[i]=k[j]
+      //       k[j]=t
+      //     }
+      //   }
+      //  }
+      //  console.log(k);
+// 24. Print Patter using loop.
+//  let bb =[1,2,3,4,5];
+//  for (let i = 0; i < bb.length; i++) {
+//   for (let j = 0; j <=i; j++) {
+//     console.log(bb[j]);  
+//   }
+  
+//  }
+//printing sum of positive numbers
+// let r = [-1,-2,-3,-4,0,1,2,3,4,5,6];
+// let c=0;
+// let b = r.reduce(hell,0);
+// function hell(total,value,index,Array) {
+//   if(value >= 0){
+//     // return total+value;
+//     return c=c+value;
+// }
+// }
+// console.log(b);
+// 25. Program to Calculate the Power of a Number(using loop only).
+  // let x = {brand:"ford",model:"mustrang",type:"car",year:"2023",registration:{state:"Telangana",pin:506369}}
+  // let {brand,type,model,year,registration:{state}} = x;
+  // console.log(brand);
+  // console.log(type);
+  // console.log(model);
+  // console.log(registration);
+  // Taking the object and saperating keys and values;
+  try{
+  let x = {name:"venu",roll:"64",study:"Btech"}
+  // document.write("Original Object",x);
+  console.log("Original object",x);
+  let y = [];
+   for(keys in x){
+    y.push(keys);
+   }
+   console.log("Keys",y);
+  // document.write("Keys",y);
+   let y1="";
+  for(let y2 in x){
+    y1=y1+x[y2]+" ";
+  }
+  let y3 =y1.split(" ");
+  let y4 = y3.filter(hell);
+  function hell(value,index,Array){
+    return value;
+  }
+  console.log("Values",y4);
+  document.write("values",y4);
+  function name([a,b,...c]) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
+  }
+  name([1,2,3,4,5,6])
+}
+catch(err){
+  console.log(err.message);
+}
+  
+
+  </script>
+  </body>
+</html>

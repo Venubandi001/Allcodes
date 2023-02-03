@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        #e2{
+            background-color: #f70fd6;
+            color: aliceblue;
+            height: 20px;
+            width: 253px;
+            margin-top: -5px;
+            margin-left: -6px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #e1{
+            margin-left: 200px;
+            visibility: hidden;
+            border: 2px solid rgb(238, 228, 237);
+            border-style: outset;
+            padding: 5px;
+            height: 0px;
+            width: 0px;
+            border-radius: 8px;
+            position: sticky;
+            margin-top:30px;
+        }
+        #e3{
+            border: 1px solid rgb(238, 228, 237);
+            padding: 5px;
+            margin-left: 10px;
+            width: 230px;
+            border-radius: 6px;
+        }
+        #e5{
+            padding: 5px;
+            border: 1px solid black;
+            width: 200px;
+            margin: 0px;
+            border-radius: 20px;
+        }
+        #e6{
+            padding: 5px;
+            border: 1px solid black;
+            margin: 20px;
+            width: 200px;
+            border-radius: 20px;
+        }
+        #e7{
+            padding: 5px;
+            border: 1px solid black;
+            margin: 20px;
+            width: 200px;
+            border-radius: 20px;
+        }
+        #e8{
+            background-color: #f70fd6;
+            color: aliceblue;
+            padding: 5px;
+            margin: 15px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        #c1:hover + #e1 {
+            visibility: visible;
+            width: 260px;
+            height: 400px;
+            transition: 2s;
+            
+            
+        }
+        /* #c1:hover #e1{
+            visibility: visible;
+            transform: 2s;
+        } */
+        #c1:hover + #e1 > #e3 input{
+            width: 200px;
+            margin: 20px;
+            transform: 3s;
+            padding: 10px;
+        }
+        #c1 {
+            
+            background-color: chartreuse;
+            width: 200px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <p id="c1">Hover Me....!</p>
+    <div id="e1">
+      
+         <p id="e2">Let's Chat? -Online</p>
+         <p>Please fill out the form below to start
+             chatting with the next available agent.</p>
+        <div id="e3">
+            
+            <!-- <input  type="text" placeholder="Your Name" id="e5"><br/>
+            <input type="text" placeholder="Email Adress" id="e6"><br/>
+            <input type="text" placeholder="Explan your queries" id="e7"> -->
+            <p id="e5">name</p>
+            <p id="e6">Email</p>
+            <p id="e7">Explain</p>
+            <p id="e8">Start Chat</p>
+         </div>
+      
+    </div>
+</body>
+</html>

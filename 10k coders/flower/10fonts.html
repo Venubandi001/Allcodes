@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        
+        
+        .h1styling{
+            font-size: xx-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+            background-color: blue;
+            /* width: 50% */
+             width: 50%;
+        }
+        .pstyling{
+            background-color: yellow;
+            
+        }
+        .v2{
+            background-color: orange;
+            width: 50%;
+        }
+        h2{
+            font-style: italic;
+            font-weight: lighter;
+            font-display: inherit;
+            font-language-override: inherit;
+            text-decoration: line-through;
+            text-align: right;
+        }
+        .venu{
+            background-color: aqua;
+            width: 50vw;
+            text-align: right;
+            text-transform: uppercase;
+            text-decoration: overline ;
+            text-decoration: underline wavy red;
+            font-variant-caps: all-small-caps;
+            
+            
+        }
+    </style>
+</head>
+<body>
+<div class="v2">
+   <div><h1 class="h1styling">Venu</h1></div>
+   
+    <p class="pstyling">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique aperiam optio laboriosam excepturi possimus dolorum praesentium. Sit quibusdam sed ex, molestias cum unde in! Reiciendis quae magnam incidunt in ut?</p>
+   
+</div>
+<h2>Rajamouli</h2>
+<div class="venu">
+    <h1>Shankar Narayana</h1>
+    <p id="demo">  Making the web more <span class="v2"> beautiful</span>, fast, and open through great typography</p>
+</div>
+<button onclick="MyFunction()">Try it</button>
+<script>
+    function MyFunction(){
+    let text = document.getElementById("demo").innerHTML;
+    document.getElementById("demo").innerHTML = text.replace('beautiful','venu');
+    }
+</script>
+</body>
+</html>
